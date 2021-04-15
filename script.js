@@ -26,7 +26,7 @@ $(document).ready(function(){
     // typing animation script
     var typed = new Typed(".typing", {
         strings: ["Senior Data Scientist", "Senior Machine Learning Engineer"],
-        typeSpeed: 50,
+        typeSpeed: 40,
         backSpeed: 60,
         loop: true
     });
