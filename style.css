@@ -553,14 +553,14 @@ footer span a:hover{
     }
 }
 
-@media (max-width: 1104px){
+@media (max-width: 2000px){
     .about .about-content .left img{
         height: 350px;
         width: 350px;
     }
 }
 
-@media (max-width: 991px){
+@media (max-width: 1080px){
     .max-width{
         padding: 0 50px;
     }

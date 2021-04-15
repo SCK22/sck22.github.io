@@ -25,15 +25,15 @@ $(document).ready(function(){
 
     // typing animation script
     var typed = new Typed(".typing", {
-        strings: ["Senior Data Scientist","Senior Machine Learning Engineer"],
-        typeSpeed: 300,
+        strings: ["Senior Data Scientist", "Senior Machine Learning Engineer"],
+        typeSpeed: 50,
         backSpeed: 60,
         loop: true
     });
 
     var typed = new Typed(".typing-2", {
         strings: ["Senior Data Scientist","Senior Machine Learning Engineer"],
-        typeSpeed: 300,
+        typeSpeed: 50,
         backSpeed: 60,
         loop: true
     });
