@@ -26,14 +26,14 @@ $(document).ready(function(){
     // typing animation script
     var typed = new Typed(".typing", {
         strings: ["Senior Data Scientist","Senior Machine Learning Engineer"],
-        typeSpeed: 100,
+        typeSpeed: 200,
         backSpeed: 60,
         loop: true
     });
 
     var typed = new Typed(".typing-2", {
         strings: ["Senior Data Scientist","Senior Machine Learning Engineer"],
-        typeSpeed: 100,
+        typeSpeed: 200,
         backSpeed: 60,
         loop: true
     });
