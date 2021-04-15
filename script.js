@@ -32,7 +32,7 @@ $(document).ready(function(){
     });
 
     var typed = new Typed(".typing-2", {
-        strings: ["Data Scientist","Data Analyst","Business Analyst"],
+        strings: ["Senior Data Scientist","Senior Machine Learning Engineer"],
         typeSpeed: 100,
         backSpeed: 60,
         loop: true
