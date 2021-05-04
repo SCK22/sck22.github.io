@@ -143,11 +143,12 @@ html{
 section{
     padding: 100px 0;
 }
-.about, .projects, .skills, .education, .contact, footer{
+.about, .projects, .blogs, .skills, .education, .contact, footer{
     font-family: 'Poppins', sans-serif;
 }
 .about .about-content, 
 .projects .projects-content, 
+.blogs .blogs-content,
 .skills .skills-content,
 .contact .contact-content{
     display: flex;
@@ -230,15 +231,17 @@ section .title::after{
 }
 
 /* projects section styling */
-.projects, .education{
+.projects, .blogs, .education{
     color: #fff;
     background: #111;
 }
 .projects .title::before,
+.blogs .title::before,
 .education .title::before{
     background: #fff;
 }
 .projects .title::after,
+.blogs .title::after,
 .education .title::after{
     background: #111;
     content: "";
@@ -282,6 +285,49 @@ section .title::after{
     transition: all 0.3s ease;
 }
 .projects .projects-content .card .text:hover a{
+    text-decoration: underline;
+}
+
+/* blogs */
+.blogs .blogs-content .card{
+    width: calc(35% - 20px);
+    background: #222222;
+    text-align: center;
+    border-radius: 15px;
+    padding: 40px 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.blogs .blogs-content .card:hover{
+    background: rgb(32, 99, 187);
+}
+.blogs .blogs-content .card .box{
+    transition: all 0.3s ease;    
+}
+.blogs .blogs-content .card:hover .box{
+    transform: scale(1.05);
+}
+.blogs .blogs-content .card i{
+    font-size: 50px;
+    color: rgb(32, 99, 187);
+    transition: color 0.3s ease;
+}
+.blogs .blogs-content .card:hover i{
+    color: #fff;
+}
+.blogs .blogs-content .card .text{
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+}
+.blogs .blogs-content .card .text a{
+    color: #fff;
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+    transition: all 0.3s ease;
+}
+.blogs .blogs-content .card .text:hover a{
     text-decoration: underline;
 }
 
