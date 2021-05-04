@@ -486,7 +486,6 @@ section .title::after{
     background: rgb(32, 99, 187)!important;
 }
 
-
 /* contact section styling */
 .contact .title::after{
     content: "";
@@ -516,7 +515,7 @@ section .title::after{
 }
 .contact .contact-content .row i{
     font-size: 25px;
-    color: rgb(32, 99, 187);
+    color: firebrick;
 }
 .contact .contact-content .info .head{
     font-weight: 500;
@@ -584,7 +583,7 @@ footer{
     color: floralwhite;
 }
 footer span a{
-    color: rgb(32, 99, 187);
+    color: firebrick;
     text-decoration: none;
 }
 footer span a:hover{
@@ -599,14 +598,14 @@ footer span a:hover{
     }
 }
 
-@media (max-width: 2000px){
+@media (max-width: 1104px){
     .about .about-content .left img{
         height: 350px;
         width: 350px;
     }
 }
 
-@media (max-width: 1080px){
+@media (max-width: 991px){
     .max-width{
         padding: 0 50px;
     }
