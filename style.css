@@ -536,9 +536,7 @@ section .title::after{
     text-align: center;
     transition: all 0.3s ease-out;
 }
-.contact .contact-content .right .button:hover{
-    width: 120px;
-}
+
 .contact .contact-content .right .button .icon{
     display: inline-block;
     height: 60px;
