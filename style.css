@@ -243,7 +243,7 @@ section .title::after{
 .projects .title::after,
 .blogs .title::after,
 .education .title::after{
-    background: #111;
+    background: #ffffff;
     content: "";
 }
 .projects .projects-content .card{
