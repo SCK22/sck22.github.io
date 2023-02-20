@@ -1,5 +1,11 @@
-theme: minima
-title: Chaithanya Kumar.S
+
+title: Chaithanya Kumar's Blogs
 description: Blogs on data science, machine learning, visualization, MLOps
 url: https://sck22.github.io/
+author: Chaithanya Kumar.S
+email: chaithanyakumar.ds@gmail.com
 # baseurl: /sck22.github.io
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
