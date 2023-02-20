@@ -28,15 +28,15 @@ title: My blogs
     <div class="max-width"> -->
 <h2 class="title">Blogs</h2>
 <!-- <div class="blogs-content"> -->
-    <ul>
-        {% for post in site.posts %}
-        <li>
-            <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-            {{ post.excerpt }}
-        </li>
-        {% endfor %}
-    </ul>
-    <!-- <div class="text"><a
+<ul>
+    {% for post in site.posts %}
+    <li>
+        <h2><a href="{{post.url}}">{{ post.title }}</a></h2>
+        {{ post.excerpt }}
+    </li>
+    {% endfor %}
+</ul>
+<!-- <div class="text"><a
             href="https://medium.com/nerd-for-tech/genetic-algorithm-in-python-from-scratch-e1bcc8f57880">Genetic
             Algorithm in python from scratch. (Using ray
             for multi processing)</a></div>
@@ -50,7 +50,5 @@ title: My blogs
                 href="https://chaithanyakumars.medium.com/music-style-transfer-using-deep-learning-part-1-f0cb7166073f">Music
                 Style Transfer using Deep Learning</a></div> -->
 
-        <!-- </div>
+<!-- </div>
 </section> -->
-
-        
