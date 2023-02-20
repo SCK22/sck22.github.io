@@ -108,9 +108,17 @@
             </div>
         </div>
     </section>
-
-    <!-- projects section start -->
-
+    <section>
+        <!-- blogs section start -->
+        <ul>
+            {% for post in site.posts %}
+            <li>
+                <h2><a href="{{post.url}}">{{ post.title }}</a></h2>
+                {{ post.excerpt }}
+            </li>
+            {% endfor %}
+        </ul>
+    </section>
     <section class="projects" id="projects">
         <div class="max-width">
             <h2 class="title">Projects</h2>
