@@ -2,4 +2,4 @@ theme: minima
 title: Chaithanya Kumar.S
 description: Blogs on data science, machine learning, visualization, MLOps
 url: https://sck22.github.io/
-# baseurl: /sck22
+baseurl: /sck22.github.io
