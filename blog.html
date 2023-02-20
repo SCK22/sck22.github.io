@@ -3,7 +3,7 @@ layout: default
 title: My blogs
 ---
 
-<head>
+<!-- <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>
@@ -21,38 +21,39 @@ title: My blogs
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
 
-</head>
+</head> -->
 
-<ul>
-    {% for post in site.posts %}
-    <li>
-        <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-        {{ post.excerpt }}
-    </li>
-    {% endfor %}
-</ul>
+
 <!-- <section class="blogs" id="blogs">
     <div class="max-width"> -->
-        <h2 class="title">Blogs</h2>
-        <div class="blogs-content">
+<h2 class="title">Blogs</h2>
+<div class="blogs-content">
+    <ul>
+        {% for post in site.posts %}
+        <li>
+            <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+            {{ post.excerpt }}
+        </li>
+        {% endfor %}
+    </ul>
+    <div class="text"><a
+            href="https://medium.com/nerd-for-tech/genetic-algorithm-in-python-from-scratch-e1bcc8f57880">Genetic
+            Algorithm in python from scratch. (Using ray
+            for multi processing)</a></div>
 
-            <div class="text"><a
-                    href="https://medium.com/nerd-for-tech/genetic-algorithm-in-python-from-scratch-e1bcc8f57880">Genetic
-                    Algorithm in python from scratch. (Using ray
-                    for multi processing)</a></div>
+    <div class="text"><a
+            href="https://chaithanyakumars.medium.com/understanding-the-difficulty-of-training-deep-feed-forward-neural-networks-e4545690b4d5">Why
+            is glorot uniform a default weight
+            initialization technique in tensorflow?</a>
 
-            <div class="text"><a
-                    href="https://chaithanyakumars.medium.com/understanding-the-difficulty-of-training-deep-feed-forward-neural-networks-e4545690b4d5">Why
-                    is glorot uniform a default weight
-                    initialization technique in tensorflow?</a>
+        <div class="text"><a
+                href="https://chaithanyakumars.medium.com/music-style-transfer-using-deep-learning-part-1-f0cb7166073f">Music
+                Style Transfer using Deep Learning</a></div>
 
-                <div class="text"><a
-                        href="https://chaithanyakumars.medium.com/music-style-transfer-using-deep-learning-part-1-f0cb7166073f">Music
-                        Style Transfer using Deep Learning</a></div>
-
-            <!-- </div>
+        <!-- </div>
 </section> -->
 
-<div>Like what you read here? You can <a href="/index.html#contact">contact</a>
-    me for a full time or
-    consulting assignment. </div>
+        <div>Like what you read here? You can <a
+                href="/index.html#contact">contact</a>
+            me for a full time or
+            consulting assignment. </div>
