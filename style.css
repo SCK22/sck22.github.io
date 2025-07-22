@@ -350,10 +350,11 @@ body {
 }
 
 .section-title {
-  font-size: clamp(1.5rem, 3vw, 2.5rem);
+  font-size: clamp(1.5rem, 2.5vw, 2.2rem);
   margin-bottom: var(--space-lg);
   text-align: center;
   color: var(--text);
+  line-height: 1.2;
 }
 
 /* Experience section */
