@@ -20,7 +20,7 @@ function scrollToSection(sectionId) {
             behavior: 'smooth',
             block: 'start'
         });
-    }
+        }
 }
 
 // Mobile menu toggle
@@ -30,7 +30,7 @@ const navLinks = document.querySelector('.nav-links');
 mobileMenu.addEventListener('click', () => {
     navLinks.classList.toggle('active');
     mobileMenu.classList.toggle('active');
-});
+    });
 
 // Theme toggle functionality
 const themeToggle = document.querySelector('.theme-toggle');
@@ -96,7 +96,7 @@ const observer = new IntersectionObserver((entries) => {
 // Observe all elements with animate-fade-up class
 document.querySelectorAll('.animate-fade-up').forEach(el => {
     observer.observe(el);
-});
+    });
 
 // Navbar scroll behavior
 let lastScrollTop = 0;
