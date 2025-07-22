@@ -1,13 +1,13 @@
 title: Chaithanya Kumar
 description: Blogs on data science, machine learning, visualization, MLOps
-url: https://sck22.github.io/
+url: https://sck22.github.io
 author: Chaithanya Kumar.S
 email: chaithanyakumar.ds@gmail.com
 theme: minima
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
-baseurl: '/sck22.github.io' # the subpath of your site, e.g. /blog
+baseurl: '' # leave empty for username.github.io sites
 github_username: sck22
 permalink: /:collection/:year-:month-:day-:title:output_ext
 show_excerpts: true
