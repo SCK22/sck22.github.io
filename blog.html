@@ -1,24 +1,79 @@
----
-layout: default
-title: My Blogs
-permalink: /blog/
----
-
-<section class="blogs" id="blogs">
-    <div class="max-width">
-        <h2 class="title">Latest Posts</h2>
-        <div class="blogs-content">
-            <ul>
-                {% for post in site.posts %}
-                <li>
-                    <h3><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h3>
-                    <p class="post-date">{{ post.date | date: "%B %d, %Y" }}</p>
-                    {% if post.excerpt %}
-                    <p class="post-excerpt">{{ post.excerpt }}</p>
-                    {% endif %}
-                </li>
-                {% endfor %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Chaithanya Kumar</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">Chaithanya Kumar</a>
+            <ul class="nav-links">
+                <li><a href="index.html#home">Home</a></li>
+                <li><a href="index.html#experience">Experience</a></li>
+                <li><a href="index.html#education">Education</a></li>
+                <li><a href="index.html#projects">Projects</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
             </ul>
+            <div class="nav-controls">
+                <button class="theme-toggle" aria-label="Toggle theme">
+                    <i class="fas fa-sun sun-icon"></i>
+                    <i class="fas fa-moon moon-icon"></i>
+                </button>
+                <button class="mobile-menu" aria-label="Toggle menu">
+                    <span></span>
+                </button>
+            </div>
         </div>
-    </div>
-</section>
+    </nav>
+
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content animate-fade-up">
+                <h1 class="hero-title">Technical Blog</h1>
+                <p class="hero-subtitle">Thoughts on Data Science, MLOps, and AI</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="blog-grid">
+                <article class="blog-card animate-fade-up">
+                    <div class="blog-content">
+                        <h3>Glorot Uniform Weight Initialization</h3>
+                        <p class="blog-date">December 2024</p>
+                        <p>Why is glorot uniform a default weight initialization technique in tensorflow?</p>
+                        <a href="https://chaithanyakumars.medium.com/understanding-the-difficulty-of-training-deep-feed-forward-neural-networks-e4545690b4d5" class="btn btn-primary">Read on Medium</a>
+                    </div>
+                </article>
+
+                <article class="blog-card animate-fade-up">
+                    <div class="blog-content">
+                        <h3>Genetic Algorithm in python from scratch</h3>
+                        <p class="blog-date">December 2024</p>
+                        <p>How to implement a genetic algorithm from scratch in python?</p>
+                        <a href="https://chaithanyakumars.medium.com/genetic-algorithm-in-python-from-scratch-e1bcc8f57880" class="btn btn-primary">Read on Medium</a>
+                    </div>
+                </article>
+
+               
+            </div>
+            
+            <div class="blog-cta">
+                <p>For more technical articles and insights, visit my Medium blog:</p>
+                <a href="https://chaithanyakumars.medium.com/" class="btn btn-primary">View All Posts</a>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

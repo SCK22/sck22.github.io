@@ -1,281 +1,447 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>
-        Chaithanya Kumar.S
-    </title>
+    <title>Chaithanya Kumar - Lead Data Scientist</title>
     <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-    <script
-        src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
-    <script
-        src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
-    <script
-        src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
-
 <body>
-    <div class="scroll-up-btn">
-        <i class="fas fa-angle-up"></i>
-    </div>
     <nav class="navbar">
-        <div class="max-width">
-            <div class="logo" style="color:black"><a href="#">Chaithanya
-                    Kumar<span></span></a></div>
-            <ul class="menu">
-                <li><a href="#home" class="menu-btn">Home</a></li>
-                <li><a href="#about" class="menu-btn">About</a></li>
-                <li><a href="#projects" class="menu-btn">Projects</a></li>
-                <li><a href="/blog.html" class="menu-btn">Blogs</a></li>
-                <li><a href="#skills" class="menu-btn">Skills</a></li>
-                <li><a href="#contact" class="menu-btn">Contact</a></li>
-
+        <div class="container">
+            <a href="#" class="logo">Chaithanya Kumar</a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="/blog.html">Blog</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
-            <div class="menu-btn">
-                <i class="fas fa-bars"></i>
+            <div class="nav-controls">
+                <button class="theme-toggle" aria-label="Toggle theme">
+                    <i class="fas fa-sun sun-icon"></i>
+                    <i class="fas fa-moon moon-icon"></i>
+                </button>
+                <button class="mobile-menu" aria-label="Toggle menu">
+                    <span></span>
+                </button>
             </div>
         </div>
     </nav>
 
-    <!-- Home Section -->
-    <section class="home" id="home">
-        <div class="max-width">
-            <div class="home-content">
-                <div class="text-2" style="color:black">Hello! Are you looking
-                    for a </div>
-                <div class="text-2" style="color:rgb(2, 119, 197)"><span
-                        class="typing"></span>?</div>
-                <div class="text-3" style="color:rgb(0, 0, 0)">Please go
-                    through the projects and skills mentioned and if you feel
-                    that I am the right fit for your company, feel free to
-                    contact.</div>
-                <a href="#contact">contact info</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- about section start -->
-    <section class="about" id="about">
-        <div class="max-width">
-            <h2 class="title">About</h2>
-            <div class="about-content">
-                <div class="comlumn left">
-                    <div class="text" style="color:rgb(0, 106, 177)">Hi!,
-                        Chaithanya Kumar here, I am looking for a <span
-                            class="typing-2"></span>role.</div>
-                    <p>
-                        Over 6 years of experience in data science.
-                        Currently reasearching MLOps and AIOps techniques.
-                </div>
-                <div class="column right">
-                    <div class="text">Previous experience:</div>
-                    <ul>
-                        <li>I have worked on consulting and research projects
-                            in areas like retail, e-commerce and Healthcare
-                            insurance, worked on text data, used categorical
-                            embeddings , paragraph vector embeddings and other
-                            vector space models like doc2vec and word2vec.</li>
-                        <li>Built an Agent based modelling and simulation
-                            package in python and worked on spark streaming for
-                            complex event processing, these were of paramount
-                            to evaluate the robustness and performance of
-                            applications built on blockchain for marketsN.
-                            With the support of these two services we were able
-                            to achieve ~3000 transactions per minute on
-                            blockchain product developed.</li>
-                        Expertise in deep learning, machine learning and
-                        visualizations.
-
-                        <li>Assisted over 2000 students (and counting) to learn
-                            and make a career in data science, visualization
-                            and deep learning as a part of PG Diploma course in
-                            Data Science @INSOFE</li>
-
-                        <li>If you have Python, ML, AI, Visualizaition related
-                            questions, you can reach out to me on Linkedin</li>
-                    </ul>
-                    </p>
-                    <a href="Chaithanya Kumar.pdf">Download Resume</a>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- blogs section start -->
-    <!-- <section>
-        
-        <h2 class="title">Blogs</h2>
-        <ul>
-            {% for post in site.posts %}
-            <li>
-                <h2><a href="{{post.url}}">{{ post.title }}</a></h2>
-                {{ post.excerpt }}
-            </li>
-            {% endfor %}
-        </ul>
-    </section> -->
-    <section class="projects" id="projects">
-        <div class="max-width">
-            <h2 class="title">Projects</h2>
-            <div class="projects-content">
-                <div class="card">
-                    <div class="box">
-                        <i class="fa fa-car"></i>
-                        <div class="text"><a
-                                href="https://github.com/SCK22/GeneticAlgorithmTSP">Genetic
-                                Algorithm in python from scratch. (Using ray
-                                for multi processing)</a></div>
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content animate-fade-up">
+                <h1 class="hero-title">Lead Data Scientist</h1>
+                <p class="hero-subtitle">Driving innovation in MLOps and AIOps with 8+ years of experience in AI and ML</p>
+                <div class="hero-highlights">
+                    <div class="highlight-item" onclick="scrollToSection('education')">
+                        <i class="fas fa-graduation-cap"></i>
+                        <span>MTech from IIT Hyderabad</span>
                     </div>
-                </div>
-
-                <div class="card">
-                    <div class="box">
+                    <div class="highlight-item" onclick="scrollToSection('insofe-mentor')">
+                        <i class="fas fa-users"></i>
+                        <span>Mentored 2000+ Students in Data Science, Deep Learning, and Visualization</span>
+                    </div>
+                    <div class="highlight-item" onclick="scrollToSection('micron-manufacturing')">
                         <i class="fas fa-chart-line"></i>
-                        <div class="text"><a
-                                href="https://github.com/SCK22/Visualizations">Visualizations
-                                with various datasets and tools.</a></div>
+                        <span>85.7% Precision in Defective wafer detection</span>
+                    </div>
+                    
+                    <div class="highlight-item" onclick="scrollToSection('claim-genius')">
+                        <i class="fas fa-rocket"></i>
+                        <span>Reduced TAT for insurance claims from 13 days to 5 minutes</span>
+                    </div>
+                    
+                </div>
+
+                <div class="hero-expertise">
+                    <h3>Core Expertise</h3>
+                    <div class="expertise-tags">
+                        <span class="tag">Product Development</span>
+                        <span class="tag">Large Language Models</span>
+                        <span class="tag">Computer Vision</span>
+                        <span class="tag">MLOps</span>
+                        <span class="tag">Team Leadership</span>
+                        <span class="tag">Insurance Analytics</span>
                     </div>
                 </div>
 
-
-                <div class="card">
-                    <div class="box">
-                        <i class="fa fa-music"></i>
-                        <div class="text"><a
-                                href="https://github.com/SCK22/SongClassificationAndStyleTransfer-DockerApp">Ever
-                                wanted to know the genre of your favourite
-                                song? I have created an app for that using some
-                                open datasets and "containerized" it with
-                                docker and django.</a></div>
-                    </div>
+                <div class="hero-cta">
+                    <a href="#experience" class="btn btn-primary">View Experience</a>
+                    <a href="#contact" class="btn">Contact Me</a>
                 </div>
             </div>
-            <div>Like what you read here? You can <a
-                    href="#contact">contact</a> me for a full time or
-                consulting assignment. </div>
         </div>
-
     </section>
 
-
-    <!-- skills section starting -->
-    <section class="skills" id="skills">
-        <div class="max-width">
-            <h2 class="title">Skills</h2>
-            <div class="skills-content">
-                <div class="column left">
-                    <div class="text">Data Science Skills</div>
-                    <ul>
-                        <li><b>Predictive Analytics techniques:</b> Linear
-                            Regression, Logistic Regression
+    <section id="experience" class="section">
+        <div class="container">
+            <h2 class="section-title">Professional Experience</h2>
+            <div class="experience-grid">
+                <div class="experience-card animate-fade-up">
+                    <div class="experience-header">
+                        <h3>Senior Data Scientist</h3>
+                        <span class="experience-duration">Current</span>
+                    </div>
+                    <div class="company-info">
+                        <strong>Lightspun</strong> • Jul 2023 - Present
+                    </div>
+                    <ul class="experience-highlights">
+                        <li>
+                            <strong>Product Development</strong>
+                            Leading the development of Large Language Model applications for production deployment. Working with cross-functional teams to integrate AI solutions into enterprise systems.
                         </li>
-                        <li><b>Machine Learning techniques:</b>Naive Bayes,
-                            KNN, Clustering, Decision Trees, Ensemble Models
-                            (Random Forests and heterogeneous ensembles), SVM,
-                            XGBOOST, GBM.
+                        <li>
+                            <strong>Technical Architecture</strong>
+                            Designing scalable ML infrastructure to support enterprise AI workloads. Creating systems that can adapt to evolving technology requirements and business needs.
                         </li>
-                        <li><b>Text Mining techniques:</b>Language modelling,
-                            Topic modelling, Sentiment Analysis, Page ranking,
-                            Text classification.
+                        <li>
+                            <strong>Research & Development</strong>
+                            Contributing to AI research initiatives and translating theoretical advances into practical business solutions. Focusing on applications that deliver measurable value.
                         </li>
-                        <li><b>Deep Learning techniques:</b>Deep Neural
-                            Networks, Convolutional Neural Networks (CNN),
-                            Object detection, Recurrent Neural Networks (RNN),
-                            Long Short term Memory (LSTM), Embedding techniques
-                            like word embedding, paragraph embedding,
-                            categorical embedding, doc2vec, entity extraction.
-                        </li>
-                        <li><b>Optimization techniques:</b>Genetic Algorithms,
-                            Linear programming.
-                        </li>
-
-
+                    </ul>
                 </div>
-                <div class="column right">
-                    <div class="text"><b>Technical Skills</b></div>
-                    <ul>
-                        <li>Python</li>
-                        <li>Keras</li>
-                        <li>Tensorflow 2.x</li>
-                        <li>R</li>
-                        <li>Power BI</li>
-                        <li>Tableau</li>
-                        <li>Docker</li>
-                        <li>Django</li>
-                        <li>flask</li>
-                        <li>git</li>
-                        <li>dvc</li>
+                
+                <div class="experience-card animate-fade-up" id="micron-manufacturing">
+                    <div class="experience-header">
+                        <h3>Senior Data Scientist</h3>
+                        <span class="experience-duration">2 years 1 month</span>
+                    </div>
+                    <div class="company-info">
+                        <strong>Micron Technology</strong> • Jul 2021 - Jul 2023
+                    </div>
+                    <ul class="experience-highlights">
+                        <li>
+                            <strong>Manufacturing Analytics</strong>
+                            Developed computer vision systems for semiconductor defect detection, achieving 85.7% precision. Built solutions that help maintain quality standards in high-volume manufacturing.
+                        </li>
+                        <li>
+                            <strong>Real-time Vision Systems</strong>
+                            Created near real-time image analytics for semiconductor manufacturing with 100% recall. The system processes production images continuously to ensure quality control.
+                        </li>
+                        <li>
+                            <strong>MLOps Implementation</strong>
+                            Established MLOps infrastructure for experiment tracking and model versioning. Set up processes that enable systematic ML development across the organization.
+                        </li>
+                        <li>
+                            <strong>Technical Innovation</strong>
+                            Filed technical disclosures and authored research papers on manufacturing AI applications. Contributed to advancing the field through practical research and documentation.
+                        </li>
+                    </ul>
                 </div>
 
+                <div class="experience-card animate-fade-up" id="claim-genius">
+                    <div class="experience-header">
+                        <h3>Data Scientist</h3>
+                        <span class="experience-duration">1 year 4 months</span>
+                    </div>
+                    <div class="company-info">
+                        <strong>Claim Genius</strong> • Mar 2020 - Jun 2021
+                    </div>
+                    <ul class="experience-highlights">
+                        <li>
+                            <strong>Process Optimization</strong>
+                            Reduced car insurance claim processing time from 13 days to 5 minutes using AI automation. Streamlined workflows to improve customer experience and operational efficiency.
+                        </li>
+                        <li>
+                            <strong>Computer Vision Development</strong>
+                            Built damage detection models using deep learning architectures like EfficientNet, VGG16, and YOLO. Created systems that assist in accurate claim assessment.
+                        </li>
+                        <li>
+                            <strong>Scalable Architecture</strong>
+                            Designed ML training pipelines with multiprocessing for production deployment. Built robust systems that can handle the scale of insurance operations.
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="experience-card animate-fade-up">
+                    <div class="experience-header">
+                        <h3>Data Scientist & Product Developer</h3>
+                        <span class="experience-duration">1 year 6 months</span>
+                    </div>
+                    <div class="company-info">
+                        <strong>KoineArth</strong> • Oct 2018 - Mar 2020
+                    </div>
+                    <ul class="experience-highlights">
+                        <li>
+                            <strong>B2B Platform Development</strong>
+                            Built a platform to reduce transaction costs and improve market efficiencies in economic networks. Created systems that facilitate better business interactions.
+                        </li>
+                        <li>
+                            <strong>Agent-Based Modeling</strong>
+                            Developed a Python package for modeling agent behavior using probability distributions. Created tools that help understand complex system interactions.
+                        </li>
+                        <li>
+                            <strong>Blockchain Analytics</strong>
+                            Implemented real-time streaming architecture for blockchain data analysis. Built systems to process and analyze transaction data for insights.
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="experience-card animate-fade-up" id="insofe-mentor">
+                    <div class="experience-header">
+                        <h3>Data Scientist & Mentor</h3>
+                        <span class="experience-duration">2 years 7 months</span>
+                    </div>
+                    <div class="company-info">
+                        <strong>International School of Engineering (INSOFE)</strong> • Sep 2017 - Mar 2020
+                    </div>
+                    <ul class="experience-highlights">
+                        <li>
+                            <strong>Research & Consulting</strong>
+                            Led consulting projects and research initiatives in ML optimization. Applied theoretical knowledge to solve real business problems.
+                        </li>
+                        <li>
+                            <strong>Mentorship</strong>
+                            Mentored 2000+ students in ML, AI, NLP, and Data Visualization. Helped students develop practical skills for data science careers.
+                        </li>
+                        <li>
+                            <strong>Curriculum Development</strong>
+                            Designed and delivered training programs in Machine Learning and Deep Learning. Created educational content that bridges theoretical concepts with practical applications.
+                        </li>
+                        
+                    </ul>
+                </div>
+
+                <div class="experience-card animate-fade-up">
+                    <div class="experience-header">
+                        <h3>Data Scientist</h3>
+                        <span class="experience-duration">8 months</span>
+                    </div>
+                    <div class="company-info">
+                        <strong>Sutherland Healthcare Solutions</strong> • Feb 2017 - Sep 2017
+                    </div>
+                    <ul class="experience-highlights">
+                        <li>
+                            <strong>Healthcare Analytics</strong>
+                            Built ML models for insurance claim denial prediction with 86% recall. Developed systems that help improve claim processing accuracy in healthcare.
+                        </li>
+                        <li>
+                            <strong>Payment Analytics</strong>
+                            Developed deep learning models for payment propensity and invoice prioritization. Created tools that help optimize revenue cycle management.
+                        </li>
+                        <li>
+                            <strong>NLP Solutions</strong>
+                            Created semantic slot filling mechanism for natural language to SQL conversion. Built systems that make healthcare data more accessible to users.
+                        </li>
+                    </ul>
+                </div>
             </div>
+        </div>
     </section>
-    <!-- contact section start -->
-    <section class="contact" id="contact">
 
-        <div class="max-width">
-            <h2 class="title">Contact</h2>
+    <section id="education" class="section">
+        <div class="container">
+            <h2 class="section-title">Education</h2>
+            <div class="education-grid">
+                <div class="education-card animate-fade-up">
+                    <div class="education-header">
+                        <h3>Master of Technology (MTech)</h3>
+                        <span class="education-duration">2021 - 2024</span>
+                    </div>
+                    <div class="education-info">
+                        <strong>Indian Institute of Technology Hyderabad</strong>
+                        <p class="degree-specialization">Data Sciences in Computer Science and Engineering</p>
+                    </div>
+                    
+                    <div class="coursework">
+                        <h4>Core Coursework:</h4>
+                        <div class="courses-grid">
+                            <div class="course-category">
+                                <h5>Foundations</h5>
+                                <ul>
+                                    <li>Mathematical Foundations of Data Science</li>
+                                    <li>Foundations of Machine Learning</li>
+                                    <li>Scalable Algorithms for Data Analysis</li>
+                                </ul>
+                            </div>
+                            <div class="course-category">
+                                <h5>Advanced ML & AI</h5>
+                                <ul>
+                                    <li>Deep Learning</li>
+                                    <li>Natural Language Processing</li>
+                                    <li>Hardware Design and Machine Learning</li>
+                                </ul>
+                            </div>
+                            <div class="course-category">
+                                <h5>Specialized Areas</h5>
+                                <ul>
+                                    <li>Data Mining</li>
+                                    <li>Visual Computing</li>
+                                    <li>Video Content Analysis</li>
+                                </ul>
+                            </div>
+                            <div class="course-category">
+                                <h5>Capstone Projects</h5>
+                                <ul>
+                                    <li>Capstone Project-1</li>
+                                    <li>Capstone Project-2</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="education-card animate-fade-up">
+                    <div class="education-header">
+                        <h3>Professional Training in Data Science</h3>
+                        <span class="education-duration">2016 - 2017</span>
+                    </div>
+                    <div class="education-info">
+                        <strong>International School of Engineering (INSOFE)</strong>
+                        <p class="degree-specialization">Big Data Analytics and Optimization, Data Analytics</p>
+                        <p class="education-description">Comprehensive introduction to data science with hands-on experience covering Big Data tools (Apache Pig, Spark, Hive), Machine Learning algorithms (SVM, Neural Networks, Decision Trees, Random Forest), AI techniques (CNN, RNN), and programming in R and Python.</p>
+                    </div>
+                </div>
+
+                <div class="education-card animate-fade-up">
+                    <div class="education-header">
+                        <h3>Bachelor of Technology (B.Tech)</h3>
+                        <span class="education-duration">2010 - 2014</span>
+                    </div>
+                    <div class="education-info">
+                        <strong>TKR College of Engineering and Technology</strong>
+                        <p class="degree-specialization">Mechanical Engineering</p>
+                        <p class="education-description">Strong foundation in engineering principles and analytical thinking. Active member of Automotive Engineers society, developing problem-solving and technical skills that later transitioned to data science.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="section">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                <article class="project-card animate-fade-up">
+                    <div class="project-content">
+                        <h3>Genetic Algorithm Optimization</h3>
+                        <p>Python implementation with Ray for distributed computing</p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>Ray</span>
+                            <span>Optimization</span>
+                        </div>
+                        <a href="https://github.com/SCK22/GeneticAlgorithmTSP" class="btn btn-primary">View Project</a>
+                    </div>
+                </article>
+
+                <article class="project-card animate-fade-up">
+                    <div class="project-content">
+                        <h3>Advanced Visualizations</h3>
+                        <p>Comprehensive visualization toolkit for complex datasets</p>
+                        <div class="project-tech">
+                            <span>Data Viz</span>
+                            <span>Python</span>
+                            <span>Analytics</span>
+                        </div>
+                        <a href="https://github.com/SCK22/Visualizations" class="btn btn-primary">View Project</a>
+                    </div>
+                </article>
+
+                <article class="project-card animate-fade-up">
+                    <div class="project-content">
+                        <h3>Music Genre Classification</h3>
+                        <p>Containerized ML application for music classification</p>
+                        <div class="project-tech">
+                            <span>Docker</span>
+                            <span>Django</span>
+                            <span>ML</span>
+                        </div>
+                        <a href="https://github.com/SCK22/SongClassificationAndStyleTransfer-DockerApp" class="btn btn-primary">View Project</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="section">
+        <div class="container">
+            <h2 class="section-title">Technical Expertise</h2>
+            <div class="skills-grid">
+                <div class="skill-category animate-fade-up">
+                    <h3>AI & Machine Learning</h3>
+                    <ul>
+                        <li>Large Language Models (LLM)</li>
+                        <li>Deep Learning & Neural Networks</li>
+                        <li>Computer Vision & Image Processing</li>
+                        <li>Natural Language Processing</li>
+                        <li>CNN, RNN, LSTM Networks</li>
+                        <li>Time Series & Clustering</li>
+                    </ul>
+                </div>
+                <div class="skill-category animate-fade-up">
+                    <h3>Tech Stack</h3>
+                    <ul>
+                        <li><strong>Languages:</strong> Python, R, SQL</li>
+                        <li><strong>ML/AI:</strong> TensorFlow, Keras, Scikit-learn</li>
+                        <li><strong>Computer Vision:</strong> YOLO, EfficientNet, VGG16</li>
+                        <li><strong>Big Data:</strong> Spark, PySpark, Kafka</li>
+                        <li><strong>Cloud & DevOps:</strong> AWS, Docker, Git</li>
+                        <li><strong>Visualization:</strong> Tableau, Power BI, Plotly</li>
+                    </ul>
+                </div>
+                <div class="skill-category animate-fade-up">
+                    <h3>Domain Expertise</h3>
+                    <ul>
+                       
+                        <li>Insurance & Healthcare Analytics</li>
+                        <li>Real-time Defect Detection</li>
+                        <li>Agent-Based Modeling</li>
+                        <li>MLOps & Model Deployment</li>
+                       
+                    </ul>
+                </div>
+                <div class="skill-category animate-fade-up">
+                    <h3>Leadership Impact</h3>
+                    <ul>
+                        <li>Team Leadership & Mentoring</li>
+                        <li>Research & Innovation</li>
+                        <li>Process Automation</li>
+                        <li>Stakeholder Management</li>
+                        <li>Technical Strategy</li>
+                        <li>Performance Optimization</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section contact">
+        <div class="container">
+            <h2 class="section-title">Let's Connect</h2>
             <div class="contact-content">
-                <div class="column left">
-                    <div class="text">Feel free to contact me</div>
-                    <div class="icons">
-                        <div class="row">
-                            <i class="fas fa-user"></i>
-                            <div class="info">
-                                <div class="head">Name</div>
-                                <div class="sub-title">Chaithanya Kumar</div>
-                            </div>
-
-                        </div>
-                        <div class="row">
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <p>Open to leadership and consulting opportunities</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
                             <i class="fas fa-envelope"></i>
-                            <div class="info">
-                                <div class="head">Email</div>
-                                <div class="sub-title">
-                                    chaithanyakumar43@gmail.com</div>
-                                <div class="sub-title">
-                                    chaithanyakumar.ds@gmail.com</div>
-                            </div>
+                            <a href="mailto:chaithanyakumar.ds@gmail.com">chaithanyakumar.ds@gmail.com</a>
                         </div>
-                        <div class="text-3" style="color:black">PS: That
-                            background picture was taken by me :). I know very
-                            little html,css and js, this page template was
-                            given by some kind friends and I made changes to
-                            suit my taste.</div>
                     </div>
                 </div>
-                <div class="column right">
-                    <div class="button">
-                        <div class="icon">
-                            <a
-                                href="https://www.linkedin.com/in/chaithanya-kumar-s/"><i
-                                    class="fab fa-linkedin-in"></i></a>
-                        </div>
-                    </div>
-                    <div class="button">
-                        <div class="icon">
-                            <a href="https://github.com/SCK22/"><i
-                                    class="fab fa-github"></i></a>
-                        </div>
-                    </div>
-                    <div class="button">
-                        <div class="icon">
-                            <a href="https://chaithanyakumars.medium.com/"><i
-                                    class="fab fa-medium"></i></a>
-                        </div>
-                    </div>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/chaithanya-kumar-s/" class="social-link">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://github.com/SCK22/" class="social-link">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://chaithanyakumars.medium.com/" class="social-link">
+                        <i class="fab fa-medium"></i>
+                    </a>
                 </div>
             </div>
         </div>
-
     </section>
 
     <script src="script.js"></script>
 </body>
-
 </html>
