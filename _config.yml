@@ -7,7 +7,7 @@ theme: minima
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
-baseurl: '' # leave empty for username.github.io sites
+baseurl: '/sck-blogs' # the subpath of your site
 github_username: sck22
 permalink: /:collection/:year-:month-:day-:title:output_ext
 show_excerpts: true
